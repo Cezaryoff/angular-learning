@@ -1,0 +1,21 @@
+<h1 xmlns="http://www.w3.org/1999/html">Hello World!</h1>
+<p>How are you today?</p>
+<p>{{ myObject.location }}</p>
+<ul>
+  <li *ngFor="let someArray of myArr"> {{ someArray }}</li>
+</ul>
+<!--<ul>-->
+  <!--<li *ngIf="czarArr == 'Czaro'"> It is working!</li>-->
+<!--</ul>-->
+<!--<div *ngIf="secondArr; else otherTmpl"> Other Template!</div>--> <!--//if true - value between div -->
+<div *ngIf="secondArr; then otherTmpl else otherTmplTwo"> </div>
+<ng-template #otherTmpl>Other Temmplate 1</ng-template>
+<ng-template #otherTmplTwo>Other Temmplate Two</ng-template>
+<!-- -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;-->
+<!--angular binding-->
+<p><img src = "{{angularLogo}}"></p>
+<p><img [src]="angularLogo"></p>
+<img bind-src="angularLogo">
+<p><button [disabled]="buttonStatus">My button!</button> </p>
+<p><button [disabled]="buttonStatusOne == 'enabled'">Second button! </button> </p>
+<app-my-new-component></app-my-new-component>`, // multiple lines with tylda at the beginning and the end

@@ -1,0 +1,35 @@
+<p>
+  <button (click)="myEvent($event)">My button for event - click!</button>
+</p>
+<p>
+  <button (mouseenter)="myEvent($event)">My button for event - mouseenter!</button>
+</p>
+
+<p>
+  <button (mouseleave)="myEvent($event)">My button for event - mouse leave!</button>
+</p>
+<p>
+  <input (input)="myEvent($event)" placeholder="Open console"/>
+</p>
+<p>
+  <input (input)="printValues($event.target.value)" placeholder="Open console"/>
+</p>
+
+<h1 [class]="titleClass">Here is class CSS change example! It get style from one class -> five-events</h1>
+
+<h2 [class.red-title]="titleClass">Here is second style Class example! - could be true or false</h2>
+
+<h1 [ngClass]="titleClasses">Get styles from few classes from properties</h1>
+
+<h1 [style.color]="styleForTitle">This is style binding example!</h1>
+
+<h1 [style.color]="styleForTitleOne ? 'yellow' : 'green'">This is style binding example with IF!</h1>
+
+<h2 [ngStyle]="stylesForTitles">This is styles for titles example:)</h2>
+
+<div>
+  <p>
+    This is data from dataService ->
+    {{somePropertyForCheckDataService}}
+  </p>
+</div>
